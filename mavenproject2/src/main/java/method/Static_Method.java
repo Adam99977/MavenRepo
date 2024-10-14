@@ -5,15 +5,22 @@ public class Static_Method {
 	static String name;
 	static int age;
 	
-	public static void display()
+	public static void setdetails(String student_name,int student_age)
 	{
-	String name;
-	int age;
+		name = student_name;
+		age = student_age;
 	}
 
-	public static void display1() 
+	public static void getdetails() 
 	{
-	String name = "Adam";
-	int age = 13;
+	System.out.println("Student_Name = " +name);
+	System.out.println("Student_Age = " +age);
+	}
+	
+	public static void main (String args[])
+	{
+		Static_Method.setdetails("Adam",35);
+		Static_Method.getdetails();
+		
 	}
 }
